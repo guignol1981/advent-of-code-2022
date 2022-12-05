@@ -18,6 +18,7 @@ const solve = async () => {
     );
 
     const sums = input.flatMap((e) => e.reduce((a, c) => (a += c)));
+
     console.log(Math.max(...sums));
 };
 

@@ -23,12 +23,7 @@ const solve = async () => {
         .flatMap((e) => e.reduce((a, c) => a + c))
         .sort((a, b) => a - b);
 
-    console.log(
-        sums
-            .map((s) => s)
-            .slice(-3)
-            .reduce((a, c) => a + c)
-    );
+    console.log(sums.slice(-3).reduce((a, c) => a + c));
 };
 
 solve();
