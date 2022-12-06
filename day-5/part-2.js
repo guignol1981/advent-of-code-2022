@@ -26,6 +26,7 @@ const solve = async () => {
 
                     cur.splice(crateIndex, 1, 'treated');
                 }
+
                 return acc;
             }, {});
 
@@ -53,6 +54,7 @@ const solve = async () => {
         (acc, cur) => (acc += crates[cur][0]),
         ''
     );
+
     console.log(topCrates);
 };
 
